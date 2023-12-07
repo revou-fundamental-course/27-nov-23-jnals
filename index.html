@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coba test</title>
-    <h1>Judul baru</h1>
+    <title>Kalkulator Matematika</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <div class="header">
+        <h1>Katik <small>Kalkulator Matematik</small></h1>
+    </div>
+
+    <div class="container">
+        <div class="homepage">
+                <h2>Welcome to Katik</h2>
+                <p>Hai Sobat, Selamat datang di Katik
+                    <br />Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling Segitiga
+                </p>
+            </div>
+
+            <div class="content">
+                <img src="ssm.png" alt="">
+                <h3>Hitung Luas Segitiga</h3>  
+                <input type="number" id="segitiga-alas" placeholder="Alas">
+                <input type="number" id="segitiga-tinggi" placeholder="Tinggi">
+                <button class="button" onclick="hitungLuasSegitiga()">Hitung</button>
+                <button class="button button-reset" onclick="resetInput()">Reset</button>
+                <p id="luas-segitiga"></p> 
+            
+            </div> 
+            <br>
+            <br>
+
+            <div class="image"><img src="ssd.png"</div>
     
+            <h3>Rumus Keliling Segitiga</h3>
+            <form id="triangleForm">
+                <div class="input-group">
+                    <label for="sideA">Nilai Sisi A:</label>
+                    <input type="number" id="sideA" required>
+                </div>
+                <div class="input-group">
+                    <label for="sideB">Nilai Sisi B:</label>
+                    <input type="number" id="sideB" required>
+                </div>
+                <div class="input-group">
+                    <label for="sideC">Nilai Sisi C:</label>
+                    <input type="number" id="sideC" required>
+                </div>
+                <button class="button" onclick="hitungkelilingsegitiga()">Hitung Keliling Segitiga</button>
+                <button class="button button-reset" onclick="resetInput()">Reset</button>
+            </form>
+            <p id="result"></p>
+
+        
+
+    
+            
 </body>
 </html>
+
+
+
+
